@@ -6,6 +6,7 @@ function domlevel(){
 		count ++;
 		child = child.parentNode;
 	}
+	alert(`The level of the element is : ${count}`)
 }
 domlevel()
-alert(`The level of the element is : ${count}`)
+
