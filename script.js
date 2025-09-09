@@ -1,13 +1,9 @@
-//your JS code here. If required.
-const level1 = document.getElementById("level")
-function level(){
-	let counter = 0
-	let current = level
-	while(current !== null){
-		current = current.parentNode;
-		counter ++;
+const child = document.getElementById("level")
+function domlevel(){
+	let count = 0
+	while(child.parentNode !== null){
+		count ++;
+		child = child.parentNode;
 	}
-	alert(`The level of the element is : ${counter}`)
-
-	
 }
+alert(`The level of the element is : ${count}`)
